@@ -4,13 +4,20 @@
 <head>
   <meta charset="utf-8">
   <title>123&#39;s blog</title>
+  <script src="/lib/js/prettify.js"></script>
+  <script src="/lib/js/jquery-3.6.4.js"></script>
   <style>
+  body {
+    margin: 0;
+  }
 </style>
   <link rel="stylesheet" type="text/css" href="/css/main.css">
+  <link rel="stylesheet" type="text/css" href="/lib/css/prettify/tomorrow.min.css">
 <meta name="generator" content="Hexo 6.3.0"></head>
 
 <body>
-  <div class="headerbar">
+  <div>
+    <div class="headerbar">
   <a class="header-button title" href="/">
     123&#39;s blog
   </a>
@@ -29,32 +36,52 @@
     
   </div>
 </div>
-<hr>
+  </div>
 
-  <div class="abs sidebar">
+  <div class="main">
+    <div class="sidebar">
+      <div class="side">
+  <div class="container">
+    <div class="author">
+      <img src="/images/avatar.png">
+      <span>123</span>
+    </div>
+  </div>
+  <div class="container">
     <h3>categories</h3>
-<ul>
-  
-  <li>
-    <a href="/categories/Hexo/"> Hexo </a>
-  </li>
-  
-</ul>
-
-<h3>tags</h3>
-<ul>
-  
-  <li>
-    <a href="/tags/demo/"> demo </a>
-  </li>
-  
-</ul>
-  </div>
-  <div class="abs main">
-    
+    <ul>
+      
+      <li>
+        <a href="/categories/Hexo/"> Hexo </a>
+      </li>
+      
+    </ul>
   </div>
 
+  <div class="container">
+    <h3>tags</h3>
+    <ul>
+      
+      <li>
+        <a href="/tags/demo/"> demo </a>
+      </li>
+      
+    </ul>
+  </div>
+</div>
+    </div>
+    <div class="content">
+      <div class="container">
   
+</div>
+    </div>
+  </div>
+
+  <div class="footer">
+  <div>
+    123's blog | Theme by Zephie | Powered by Hexo
+  </div>
+</div>
   
 
 <script type="text/x-mathjax-config">
@@ -69,6 +96,14 @@
 <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
 
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('pre').addClass('prettyprint');
+      $('code').addClass('prettyprint');
+      prettyPrint();
+    })
+  </script>
 </body>
 
 </html>
